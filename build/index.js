@@ -1,6 +1,5 @@
-const { debuglog } = require('util');
-
-const LOG = debuglog('@demimonde/dotenv')
+const { readFileSync } = require('fs');
+const { join } = require('path');
 
 /**
  * Read Environment Variables From The .env File Into process.env.
@@ -8,14 +7,24 @@ const LOG = debuglog('@demimonde/dotenv')
  * @param {boolean} [config.shouldRun=true] A boolean option. Default `true`.
  * @param {string} config.text A text to return.
  */
-               async function dotenv(config = {}) {
+               function dotenv(config = {}) {
   const {
-    shouldRun = true,
-    text,
+    silent = false,
+    location = process.cwd(),
   } = config
-  if (!shouldRun) return
-  LOG('@demimonde/dotenv called with %s', text)
-  return text
+  try {
+    const j = join(location, '.env')
+    const f = `${readFileSync(j)}`
+    const ff = f.split('\n')
+    ff.forEach(env => {
+      const [e, ...rest] = env.split('=')
+      !silent && process.stdout.write(`[+] ${e} `)
+      process.env[e] = rest.join('=')
+    })
+    !silent && process.stdout.write('\n')
+  } catch (err) {
+    console.log(err)
+  }
 }
 
 /* documentary types/index.xml */
@@ -27,4 +36,3 @@ const LOG = debuglog('@demimonde/dotenv')
 
 
 module.exports = dotenv
-//# sourceMappingURL=index.js.map
