@@ -1,10 +1,10 @@
 <types>
   <type name="Config" desc="Options for the program.">
-    <prop boolean name="shouldRun" default="true">
-      A boolean option.
+    <prop boolean name="silent" default="false">
+      Do not print the names of read env variables.
     </prop>
-    <prop string name="text">
-      A text to return.
+    <prop string name="location" default="~">
+      The location where to look up the `.env` file.
     </prop>
   </type>
 </types>

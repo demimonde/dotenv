@@ -10,14 +10,19 @@ import dotenv from '@demimonde/dotenv'
 
 ```## dotenv
 [
-  ["arg1", "string"],
-  ["arg2?", "boolean"]
+  ["config", "Config"]
 ]
 ```
 
 Call this function to get the result you want.
 
 %TYPEDEF types/index.xml%
+
+With the following `.env` file:
+
+%EXAMPLE: .env%
+
+The next example will add 4 env variables.
 
 %EXAMPLE: example/example.js, ../src => @demimonde/dotenv%
 %FORK example example/example%

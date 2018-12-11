@@ -2,7 +2,7 @@
 
 %NPM: @demimonde/dotenv%
 
-`@demimonde/dotenv` is Read Environment Variables From The .env File Into process.env.
+`@demimonde/dotenv` will Read Environment Variables From The .env File Into process.env.
 
 ```sh
 yarn add -E @demimonde/dotenv

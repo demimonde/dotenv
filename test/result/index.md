@@ -1,6 +1,6 @@
-// returns the correct output
+// initialises the variables
 test
 
 /* expected */
-test
+[+] __TEST
 /**/
