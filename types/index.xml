@@ -6,5 +6,8 @@
     <prop string name="location" default="~">
       The location where to look up the `.env` file.
     </prop>
+    <prop string name="name" default=".env">
+      The name of the `.env` file.
+    </prop>
   </type>
 </types>

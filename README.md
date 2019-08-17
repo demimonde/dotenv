@@ -16,7 +16,9 @@ yarn add -E @demimonde/dotenv
   * [`Config`](#type-config)
 - [Copyright](#copyright)
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/0.svg?sanitize=true">
+</a></p>
 
 ## API
 
@@ -26,18 +28,21 @@ The package is available by importing its default function:
 import dotenv from '@demimonde/dotenv'
 ```
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/1.svg?sanitize=true">
+</a></p>
 
-## `dotenv(`<br/>&nbsp;&nbsp;`config: Config,`<br/>`): void`
+## <code><ins>dotenv</ins>(</code><sub><br/>&nbsp;&nbsp;`config: Config,`<br/></sub><code>): <i>void</i></code>
 
 Call this function to get the result you want.
 
 __<a name="type-config">`Config`</a>__: Options for the program.
 
-|   Name   |   Type    |                  Description                   | Default |
-| -------- | --------- | ---------------------------------------------- | ------- |
-| silent   | _boolean_ | Do not print the names of read env variables.  | `false` |
-| location | _string_  | The location where to look up the `.env` file. | `~`     |
+|   Name   |       Type       |                  Description                   | Default |
+| -------- | ---------------- | ---------------------------------------------- | ------- |
+| silent   | <em>boolean</em> | Do not print the names of read env variables.  | `false` |
+| location | <em>string</em>  | The location where to look up the `.env` file. | `~`     |
+| name     | <em>string</em>  | The name of the `.env` file.                   | `.env`  |
 
 With the following `.env` file:
 
@@ -60,7 +65,9 @@ dotenv()
 [+] AZURE_STORAGE_CONNECTION_STRING [+] STORAGE [+] CONTAINER [+] SECRET
 ```
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/2.svg?sanitize=true">
+</a></p>
 
 ## Copyright
 
@@ -68,4 +75,6 @@ dotenv()
 
 [1]: https://demimonde.cc
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/-1.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/-1.svg?sanitize=true">
+</a></p>
