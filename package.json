@@ -1,6 +1,6 @@
 {
   "name": "@demimonde/dotenv",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Read Environment Variables From The .env File Into process.env.",
   "main": "build",
   "scripts": {
